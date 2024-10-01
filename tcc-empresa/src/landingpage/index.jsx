@@ -1,21 +1,15 @@
 import "./index.scss";
 
-import titulologo from "../assets/img-logo.png";
+import Cabecalho from "../components/cabecalho";
 
 export default function () {
   return (
     <div className="container-empresa">
-      <header className="faixa-cima">
-        <div className="img-tituolo">
-          <img src={titulologo} alt="" />
-        </div>
-        <div className="titulo">
-            <h1>Info Solutions</h1>
-        </div>
-      </header>
+
+      <Cabecalho/>
 
       <div className="container-sobre-nos">
-        <h1></h1>
+        <h1>fasdf</h1>
       </div>
     </div>
   );
