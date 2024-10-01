@@ -23,7 +23,11 @@ export default function () {
         <h1>{`<h1>`}uma empresa renomada de T.I{`<h1/>`}</h1>
         </div>
         
+
       </div>
+      <div className="sobre-nos">
+          <h2>Sobre nos:</h2>
+        </div>
     </div>
   );
 }

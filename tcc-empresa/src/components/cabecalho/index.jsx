@@ -6,7 +6,7 @@ export default function Cabecalho(){
         <div className="container-empresa">
         <header className="faixa-cima">
         <div className="img-tituolo">
-          <img src={titulologo} alt="" />
+          <img className="logo" src={titulologo} alt="" />
         </div>
         <div className="titulo">
             <h1>Info Solutions</h1>

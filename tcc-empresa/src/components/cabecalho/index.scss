@@ -13,5 +13,23 @@
         font-size: 22px;
         font-weight: 400;
     }
+}
+
+@media (max-width: 800px) {
+    .container-empresa{
+        .faixa-cima{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        
+            font-size: 12px;
+
+            .logo{
+                display: flex;
+                width: 40px;
+            }
+
+        }
+    }
 
 }

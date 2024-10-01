@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 
 .container-empresa{
-    font-family: "Squada One";
     .container-sobre-nos{
         background-color: #fcfcfc;
 
@@ -13,6 +12,7 @@
             // margin-top: 20%;
             padding: 10% 0px 10% 0px;
             position: relative;
+            font-family: "Squada One";
 
             img{
                 display: flex;
@@ -48,4 +48,34 @@
             }
         }
     }
+
+    .sobre-nos{
+        display: flex;
+     
+    }
+}
+
+@media (max-width: 800px) {
+    .container-empresa{
+    
+        .container-sobre-nos{
+            .simbolos{
+                .html, .css, .bd, .js{
+                    display: none;
+                }
+                .nuvem{
+                    display: flex;
+                    bottom: 60px;
+
+                    width: 45px;
+                }
+
+                h1{
+                    font-size: 22px;
+                }
+            }
+        }
+    
+    }
+
 }
