@@ -10,6 +10,10 @@ import t1 from "../assets/t1.png"
 import suporte from "../assets/suporte.png"
 import nv from "../assets/nv.png"
 import wpp from "../assets/wpp.png"
+import face from "../assets/face.png"
+import tw from "../assets/twitter.png"
+import insta from "../assets/insta.png"
+import google from "../assets/google.png"
 
 export default function () {
   return (
@@ -76,7 +80,85 @@ e responsabilidade</p>
           </div>
         </div>
 
-        <a  href="https://wa.me/qr/XBVLQ2FFCVJAO1"><img className="wpp" src={wpp} alt="" /> </a>
+        <div className="feedback">
+          <div className="titulo"><h2>FEEDBACK DO AUTÔNOMO</h2></div>
+          
+          <div className="container-feed">
+                      <div className="card">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
+            <div className="local">
+              <p className="nome">ADM</p>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
+            <div className="local">
+              <p className="nome">ADM</p>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
+            <div className="local">
+              <p className="nome">ADM</p>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
+            <div className="local">
+              <p className="nome">ADM</p>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
+            <div className="local">
+              <p className="nome">ADM</p>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
+            <div className="local">
+              <p className="nome">ADM</p>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+        <footer className="rodapé">
+          <div className="info-contato">
+              <div>
+                <p>Gostou de nosso atendimento? Alguma reclamação?</p>
+                <p>Nos contate via: e-mail, telefone ou whatsapp.</p>
+              </div>
+              <div>
+                <p>infosolutions@gmail.com</p>
+                <p>+5512996269992</p>
+              </div>
+          </div>
+
+          <div className="plataformas">
+            <div><p>Redes sociais</p></div>
+            <div className="imagens">
+              <a href=""><img src={face} alt="" /></a>
+              <a href=""><img src={tw} alt="" /></a>
+              <a href=""><img src={insta} alt="" /></a>
+              <a href=""><img src={google} alt="" /></a>
+            </div>
+          </div>
+        </footer>
+
+        <a target="_blank" href="https://wa.me/5512996269992"><img className="wpp" src={wpp} alt="" /> </a>
         
     </div>
   );
