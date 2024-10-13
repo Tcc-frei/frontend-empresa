@@ -1,5 +1,8 @@
 import "./index.scss"
+import "./responsividade.scss"
+
 import titulologo from "../../assets/img-logo.png";
+
 
 export default function Cabecalho(){
     return(

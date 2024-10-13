@@ -205,15 +205,10 @@
     .container-empresa{
         .container-sobre-nos{
             .simbolos{
-                .html, .css, .bd, .js{
+                .html, .css, .bd, .js, .nuvem{
                     display: none;
                 }
-                .nuvem{
-                    display: flex;
-                    bottom: 60px;
 
-                    width: 45px;
-                }
 
                 h1{
                     font-size: 22px;
@@ -343,11 +338,13 @@
     
                 padding: 30px;
                 justify-content: space-between;
+
+                gap: 40px;
     
     
                 .info-contato{
                     display: flex;
-                    margin-left: 0px;
+                    margin-left: -10px;
                     flex-direction: column;
                     gap: 15px;
                 }

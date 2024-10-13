@@ -1,0 +1,27 @@
+
+@media (max-width: 180px) {
+    .container-empresa{
+        .faixa-cima{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        
+            font-size: 12px;
+
+            .logo{
+                display: flex;
+                width: 25px;
+            }
+
+            .titulo{
+                h1{
+                    display: flex;
+                    font-size: 15px;
+                }
+
+            }
+
+        }
+    }
+
+}

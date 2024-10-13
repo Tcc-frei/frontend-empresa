@@ -1,4 +1,7 @@
 import "./index.scss";
+import "./responsividade.scss"
+import "./responsividadeapplewatch.scss"
+import "./iphone5.scss"
 
 import Cabecalho from "../components/cabecalho";
 import logo_html from "../assets/html.png"
@@ -141,7 +144,7 @@ e responsabilidade</p>
                 <p>Gostou de nosso atendimento? Alguma reclamação?</p>
                 <p>Nos contate via: e-mail, telefone ou whatsapp.</p>
               </div>
-              <div>
+              <div className="email">
                 <p>infosolutions@gmail.com</p>
                 <p>+5512996269992</p>
               </div>
