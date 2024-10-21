@@ -2,6 +2,7 @@ import "./index.scss";
 import "./responsividade.scss"
 import "./responsividadeapplewatch.scss"
 import "./iphone5.scss"
+import Card from "../components/cards/cards.jsx";
 
 import Cabecalho from "../components/cabecalho";
 import logo_html from "../assets/html.png"
@@ -18,7 +19,54 @@ import tw from "../assets/twitter.png"
 import insta from "../assets/insta.png"
 import google from "../assets/google.png"
 
-export default function () {
+export default function Empresa() {
+
+
+  const renCard = [
+  {
+    estrelas: "⭐",
+    comentario:  "Infelizmente, a experiência foi decepcionante. O suporte técnico demorou dias para responder e não conseguiu resolver meu problema. Não recomendo.",
+    local: "São Paulo, SP " ,
+    nome: "Junior",
+  },
+  {
+    estrelas: "⭐⭐",
+    comentario:  "O produto tem potencial, mas a interface é confusa e o desempenho deixa a desejar. Além disso, o atendimento ao cliente poderia ser mais ágil.",
+    local: "Ribeirão Preto, SP" ,
+    nome: "Roberto",
+  },
+  {
+    estrelas: "⭐⭐⭐",
+    comentario:  "A plataforma funciona bem na maior parte do tempo, mas há alguns bugs recorrentes que ainda precisam ser corrigidos. O atendimento foi satisfatório.",
+    local: "Pindamonhangaba, SP" ,
+    nome: "Rodrigo",
+  },
+  {
+    estrelas: "⭐⭐⭐⭐",
+    comentario:  "Gostei da solução oferecida pela empresa, é prática e resolve boa parte das minhas necessidades. Tive um pequeno problema, mas o suporte foi rápido e eficiente.",
+    local: "Guarulhos, SP" ,
+    nome: "Arthur Cavalcante",
+  },
+  {
+    estrelas: "⭐⭐⭐⭐⭐",
+    comentario:  "Excelente serviço! A tecnologia é inovadora, o suporte é sempre prestativo e as funcionalidades superaram minhas expectativas. Recomendo fortemente!",
+    local: "Belo Horizonte, MG" ,
+    nome: "Arthur Cavalcante",
+  },
+  {
+    estrelas: "⭐⭐⭐⭐⭐",
+    comentario:  "Empresa fantástica! A plataforma é fácil de usar, super estável, e o atendimento ao cliente é impecável. Totalmente satisfeita com o serviço!",
+    local: "Curitiba, PR" ,
+    nome: "Daniel",
+  },
+
+]
+
+
+
+
+
+
   return (
     <div className="container-empresa">
 
@@ -87,53 +135,18 @@ e responsabilidade</p>
           <div className="titulo"><h2>FEEDBACK DO AUTÔNOMO</h2></div>
           
           <div className="container-feed">
-                      <div className="card">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
-            <div className="local">
-              <p className="nome">ADM</p>
-              <p>São Paulo, SP</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
-            <div className="local">
-              <p className="nome">ADM</p>
-              <p>São Paulo, SP</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
-            <div className="local">
-              <p className="nome">ADM</p>
-              <p>São Paulo, SP</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
-            <div className="local">
-              <p className="nome">ADM</p>
-              <p>São Paulo, SP</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
-            <div className="local">
-              <p className="nome">ADM</p>
-              <p>São Paulo, SP</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor vel posuere</div>
-            <div className="local">
-              <p className="nome">ADM</p>
-              <p>São Paulo, SP</p>
-            </div>
-          </div>
+                  {
+                    renCard.map((e) => {
+                      return (
+                        <Card
+                          estrelas={e.estrelas}
+                          comentario={e.comentario}
+                          nome={e.nome}
+                          local={e.local}
+                        />
+                      )
+                    })
+                  }
           </div>
 
         </div>
@@ -166,3 +179,5 @@ e responsabilidade</p>
     </div>
   );
 }
+
+
