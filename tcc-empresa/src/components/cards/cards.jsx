@@ -1,10 +1,10 @@
 export default function Card({estrelas, comentario, local, nome}){
     return(
       <div className="card">
-      <div className="estrelas">{estrelas}</div>
-      <div className="comentario">{comentario}</div>
+      <div className="estrelas"><p>{estrelas}</p></div>
+      <div className="comentario"><p>{comentario}</p></div>
       <p className="nome">{nome}</p>
-      <div className="local">{local}</div>
+      <div className="local"><p>{local}</p></div>
     </div>
     )
   }
