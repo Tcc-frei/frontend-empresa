@@ -190,7 +190,7 @@ e responsabilidade</p>
 
         <div className="feedback"
                 data-aos="fade-rigth"
-                data-aos-offset="200"
+                data-aos-offset="0"
                 data-aos-delay="50"
                 data-aos-duration="10000"
                 data-aos-easing="ease-in-out"
@@ -257,7 +257,6 @@ e responsabilidade</p>
               <a className="face" href=""><img src={face} alt="" /></a>
               <a className="tw" href=""><img src={tw} alt="" /></a>
               <a className="insta" href=""><img src={insta} alt="" /></a>
-              <a className="google" href=""><img src={google} alt="" /></a>
             </div>
           </div>
         </footer>
