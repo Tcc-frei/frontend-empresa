@@ -35,7 +35,15 @@ AOS.init({
 export default function Cabecalho(){
     return(
         <div className="container-empresa">
-        <header className="faixa-cima">
+        <header className="faixa-cima"
+                               data-aos="fade-center"
+                               data-aos-offset="0"
+                               data-aos-delay="50"
+                               data-aos-duration="500"
+                               data-aos-easing="ease-in-out"
+                               data-aos-mirror="true"
+                               data-aos-once="false"
+                               data-aos-anchor-placement="bottom">
         <div className="img-tituolo">
           <img className="logo" src={titulologo} alt="" />
         </div>

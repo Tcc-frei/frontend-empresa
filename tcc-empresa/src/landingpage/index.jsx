@@ -17,6 +17,7 @@ import face from "../assets/face.png"
 import tw from "../assets/twitter.png"
 import insta from "../assets/insta.png"
 import google from "../assets/google.png"
+import subir from "../assets/seta-para-cima.png"
 
 import Card from "../components/cards/cards.jsx";
 import AOS from 'aos';
@@ -49,6 +50,10 @@ AOS.init({
 
 
 export default function Empresa() {
+
+  function topo(){
+    window.scroll({top:0})
+  }
 
 
   const renCard = [
@@ -95,11 +100,12 @@ export default function Empresa() {
   return (
     <div className="container-empresa">
 
-      <Cabecalho/>
+    <div className="fundo">
+    <Cabecalho/>
 
-      <div className="container-sobre-nos" 
+    <div id="inicio" className="container-sobre-nos" 
                        data-aos="fade-up"
-                       data-aos-offset="100"
+                       data-aos-offset="0"
                        data-aos-delay="50"
                        data-aos-duration="10000"
                        data-aos-easing="ease-in-out"
@@ -135,6 +141,8 @@ export default function Empresa() {
         </div>
      
         </div>
+    </div>
+     
 
         <div className="componente-3">
           <div className="container-propostas"
@@ -221,7 +229,15 @@ e responsabilidade</p>
         </div>
 
 
-        <footer className="rodapé">
+        <footer className="rodapé"
+                       data-aos="fade-bottom"
+                       data-aos-offset="100"
+                       data-aos-delay="50"
+                       data-aos-duration="500"
+                       data-aos-easing="ease-in-out"
+                       data-aos-mirror="true"
+                       data-aos-once="false"
+                       data-aos-anchor-placement="top">
           <div className="info-contato">
               <div>
                 <p>Gostou de nosso atendimento? Alguma reclamação?</p>
@@ -238,16 +254,16 @@ e responsabilidade</p>
           <div className="plataformas">
             <div><p>Redes sociais</p></div>
             <div className="imagens">
-              <a href=""><img src={face} alt="" /></a>
-              <a href=""><img src={tw} alt="" /></a>
-              <a href=""><img src={insta} alt="" /></a>
-              <a href=""><img src={google} alt="" /></a>
+              <a className="face" href=""><img src={face} alt="" /></a>
+              <a className="tw" href=""><img src={tw} alt="" /></a>
+              <a className="insta" href=""><img src={insta} alt="" /></a>
+              <a className="google" href=""><img src={google} alt="" /></a>
             </div>
           </div>
         </footer>
 
         <a target="_blank" href="https://wa.me/5512996269992"><img className="wpp" src={wpp} alt="" /> </a>
-
+        <button className="topo" onClick={topo}><img src={subir} alt="" /></button>
    
         
     </div>
